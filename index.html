@@ -8,20 +8,52 @@
 </head>
 <body>
     <style>
+        input[type="button"] {
+            font-size: large;
+            border: none;
+            color: honeydew;
+        }
         form {
             display: flex;
             flex-direction: column;
             gap: 15px;
+            align-items: center;
             padding: 10px;
             max-width: 300px;
             box-shadow: 0px 0.5px 5px;
+        }
+        .linea {
+            border-top: solid 1px grey;
+            width: 100%;
+        }
+        .crear {
+            background-color: #42b72a;
+            max-width: 70%;
+        }
+        input[type="text"], input[type="password"]  {
+            width: 90%;
+            border: solid 1px grey;
+        }
+        input {
+            border-radius: 7px;
+            padding: 10px;
+        }
+        .azul {
+            background-color:#1877f2;
+            width: 100%
+
         }
     </style>
     <form action="">
         <input type="text" placeholder="Correo electrónico o número de teléfono">
         <input type="password" placeholder="Contraseña">
-        <input type="button" value="Iniciar sesión">
-        <input type="button" value="Crear cuenta nueva">
+        <input type="button" value="Iniciar sesión" class="azul">
+        <a href="https://www.facebook.com/recover/initiate/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjM4MDUwODE0LCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D&ars=facebook_login">
+            ¿Olvidaste tu contraseña?
+        </a>
+        <div class="linea">
+        </div>
+        <input class="crear" type="button" value="Crear cuenta nueva">
     </form>
 </body>
 </html>
